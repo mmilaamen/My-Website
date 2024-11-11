@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - Product Name</title>
+  <link rel="stylesheet" href="./Product-details.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="../Home-page/index.html">Fancy-Web Technologies</a></h1>
+    <nav>
+      <a href="./Shop.html">Shop</a>
+      <a href="./Services.html">Services</a>
+      <a href="./About.html">About</a>
+      <a href="./Contact.html">Contact</a>
+      <a href="./Cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="product-detail-container">
+    <!-- Product Gallery Section -->
+    <section class="product-gallery">
+      <img src="../assets/shop/Rings/Bold Hammer Ring/bold_hammered_ring_back_reflection_change_700x.webp" alt="Main Image" class="main-image">
+      <div class="thumbnail-gallery">
+        <img src="../assets/shop/Rings/Bold Hammer Ring/Thalassa-Produktfoto-17_57d01735-f438-4085-b81d-a5b86e05a6b5_700x.webp" alt="Thumbnail 1" class="thumbnail">
+        <img src="../assets/shop/Rings/Bold Hammer Ring/Thalassa-Produktfoto-20_97a5a752-cb1d-4112-9786-bb7fbf7eff72_700x.webp" alt="Thumbnail 2" class="thumbnail">
+        <img src="../assets/shop/Rings/Bold Hammer Ring/Unbenannt-1_0000s_0017_BW-Fotos-35_700x.jpg" alt="Thumbnail 3" class="thumbnail">
+      </div>
+    </section>
+
+    <!-- Product Information Section -->
+    <section class="product-info">
+      <h2 class="product-title">Product Name 1</h2>
+      <p class="product-price">€25.00</p>
+      <p class="product-description">This is a detailed description of the product, including specifications, benefits, and other details.</p>
+
+      <!-- In Stock and Delivery Information -->
+      <div class="stock-delivery">
+        <p><strong>In Stock:</strong> Yes</p>
+        <p><strong>Delivery Time:</strong> 3-5 business days</p>
+      </div>
+
+      <!-- Ring Size Selection -->
+      <div class="size-selection">
+        <label for="ring-size">Select Ring Size:</label>
+        <select id="ring-size">
+          <option value="5">Size 5</option>
+          <option value="6">Size 6</option>
+          <option value="7">Size 7</option>
+          <option value="8">Size 8</option>
+          <option value="9">Size 9</option>
+        </select>
+        <a href="#size-chart" class="size-chart-link">Size Chart</a>
+      </div>
+
+      <button class="add-to-cart">Add to Cart</button>
+
+      <!-- Payment Methods -->
+      <div class="payment-methods">
+        <p>Available Payment Methods:</p>
+        <img src="./assets/payments/visa.png" alt="Visa" class="payment-icon">
+        <img src="./assets/payments/mastercard.png" alt="Mastercard" class="payment-icon">
+        <img src="./assets/payments/paypal.png" alt="PayPal" class="payment-icon">
+        <img src="./assets/payments/stripe.png" alt="Stripe" class="payment-icon">
+      </div>
+    </section>
+  </main>
+
+  <!-- Size Chart Modal -->
+  <div id="size-chart" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Ring Size Chart</h2>
+      <table class="size-chart-table">
+        <tr>
+          <th>Size</th>
+          <th>Diameter (mm)</th>
+          <th>Circumference (mm)</th>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>15.7</td>
+          <td>49.3</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>16.5</td>
+          <td>51.8</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>17.3</td>
+          <td>54.4</td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </table>
+    </div>
+  </div>
+
+  <script src="./Product-details.js"></script>
+</body>
+</html>
